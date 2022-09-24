@@ -27,9 +27,11 @@ module.exports = {
         "90vh": "90vh",
       },
       colors: {
-        navBar: "#c6cbf8",
+        navBar: "#f4f5f8",
         primary: "#eacff6",
-        textBase: "#62696f",
+        Name: "#483771",
+        textBase: "#5e646c",
+        Hover: "#98a6ae"
       },
     },
   },
