@@ -31,7 +31,9 @@ module.exports = {
         primary: "#eacff6",
         Name: "#483771",
         textBase: "#5e646c",
-        Hover: "#98a6ae"
+        Hover: "#98a6ae",
+        Photo: "#ee98c5",
+        Purple: "#a87ded"
       },
     },
   },
