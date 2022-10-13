@@ -6,6 +6,27 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Experience, Projects, SocialLinks } from './data';
 import { AnimatePresence, motion } from 'framer-motion';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCa4WdZWFlLDFEeefnCvf0afKrDyNYoZ9A",
+  authDomain: "portfolio-6b656.firebaseapp.com",
+  projectId: "portfolio-6b656",
+  storageBucket: "portfolio-6b656.appspot.com",
+  messagingSenderId: "343035377201",
+  appId: "1:343035377201:web:74b53255f04a777865c710",
+  measurementId: "G-XR2XKBX1H1"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export default function App() {
 
@@ -37,16 +58,19 @@ export default function App() {
 
           </div>
           <motion.div 
-            initial ={{opacity :0, scale :0.2}}
-            animate = {{opacity :1, scale :1}}
-            transition = {{ type : 'spring'}}
+            whileTap={{scale: 0.5}}
             className="block md:hidden ml-auto cursor-pointer"
             onClick={() => setIsActive(!isActive)}>
             <IoMenu className="text-2xl text-textBase"></IoMenu>
           </motion.div>
 
           {isActive &&(
-            <div className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex
+            <motion.div 
+            initial={{opacity: 0, scale: 0.5}}
+            animate={{opacity: 1, scale: 1.1}}
+            exit={{opacity: 0, scale: 0.5}}
+            transition={{delay:'0.1s', type:'spring'}}
+            className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex
             flex-col items-center justify-evenly gap-6">
 
               <a href="#home" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer duration-100 
@@ -64,7 +88,7 @@ export default function App() {
               <a href="#" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
               px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out"onClick={() => setIsActive(false)}>Download</a>
             
-            </div>
+            </motion.div>
           )}
 
         </div>
@@ -98,14 +122,16 @@ export default function App() {
             Hardworking college student seeking employment.
             </p>
 
-            <button class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium
+            <motion.button 
+            whileTap={{scale: 0.8}}
+            class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium
             text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600
             hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg
             hover:dark:shadow-teal-800/80">
             <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Download
                 </span>
-              </button>
+              </motion.button>
           </div>
         </section>
         
@@ -149,9 +175,9 @@ export default function App() {
               <span className="block text-sm text-gray-500">{n.techs}</span>
               </p>
               <a href={n.github}>
-                <div>
+                <motion.div whileTap={{scale :0.8}}>
                 <IoLogoGithub className="text-textBase text-3xl cursor-pointer"></IoLogoGithub>
-                </div>
+                </motion.div>
               </a>
             </div>
           </div>) )}
@@ -164,12 +190,13 @@ export default function App() {
             {
               SocialLinks && SocialLinks.map(n=>(
 
-                <a key={n.id}
+            <motion.a whileTap={{scale: 0.8}}
+              key={n.id}
               href='#' className='w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:text-white duration-100 ease-in-out
               cursor-pointer flex items-center justify-center gap-3'>
               {n.iconSrc}
               <p className='text-lg text-textBase'>{n.name}</p>
-            </a>
+            </motion.a>
               ))
             }
           </div>
