@@ -4,12 +4,14 @@ import {IoMenu, IoLogoGithub} from 'react-icons/io5';
 import myface from'./Img/my_face.jpeg';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Experience, Projects } from './data';
+import { Experience, Projects, SocialLinks } from './data';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function App() {
 
   const [isActive, setIsActive] = useState(false);
   return (
+  <AnimatePresence initial={false}>
     <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
       {/*Navigation Bar*/}
       <nav className="w-full px-6 z-50 fixed inset-x-0 top-2 flex justify-center items-center"> 
@@ -34,10 +36,14 @@ export default function App() {
             px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out">Download</a>
 
           </div>
-          <div className="block md:hidden ml-auto cursor-pointer"
+          <motion.div 
+            initial ={{opacity :0, scale :0.2}}
+            animate = {{opacity :1, scale :1}}
+            transition = {{ type : 'spring'}}
+            className="block md:hidden ml-auto cursor-pointer"
             onClick={() => setIsActive(!isActive)}>
             <IoMenu className="text-2xl text-textBase"></IoMenu>
-          </div>
+          </motion.div>
 
           {isActive &&(
             <div className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex
@@ -154,10 +160,24 @@ export default function App() {
         {/* Contact*/}
         <section id='contact' className='flex flex-col items-center justify-center w-full my-24'>
           <p className='text-2xl text-white capitalize'>Follow me on</p>
+          <div className='flex items-center justify-center w-full my-4 flex-wrap gap-4'>
+            {
+              SocialLinks && SocialLinks.map(n=>(
+
+                <a key={n.id}
+              href='#' className='w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:text-white duration-100 ease-in-out
+              cursor-pointer flex items-center justify-center gap-3'>
+              {n.iconSrc}
+              <p className='text-lg text-textBase'>{n.name}</p>
+            </a>
+              ))
+            }
+          </div>
         </section>
         
       </main>
     </div>
+  </AnimatePresence>
   );
 }
 
