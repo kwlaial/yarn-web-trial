@@ -172,7 +172,7 @@ export default function App() {
             <p className="text-lg text-textBase font-medium uppercase">{n.name.Length > 25 ? '${n.name.slice(0,25)}...' : n.name}</p>
             <img src={n.imageSrc} className="w-full h-full object-cover rounded-md my-4" alt="" />
             <div className="flex flex-1 items-center justify-between">
-              <p className="text-lg text-gray-900">Technologies
+              <p className="text-lg text-gray-900">Software Used
               <span className="block text-sm text-gray-500">{n.techs}</span>
               </p>
               <a href={n.github}>

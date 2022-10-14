@@ -7,9 +7,9 @@ import {
     IoLogoWhatsapp,
   } from "react-icons/io5";
   import img1 from "./Img/laser.jpg";
-  import img2 from "./Img/umichenv.jpeg";
-  import img3 from "./Img/umichlib.jpeg";
-  import img4 from "./Img/umichtree.jpeg";
+  import img2 from "./Img/Sculpt.HEIC";
+  import img3 from "./Img/lamp.jpg";
+  import img4 from "./Img/Trini.jpg";
   import img5 from "./Img/umich.jpeg";
   import img6 from "./Img/umich.jpeg";
   
@@ -64,42 +64,49 @@ export const Experience = [
   export const Projects = [
     {
       id: 1,
-      name: "Food Delivery UI Mockup",
+      name: "VR Laser Cutter Traning",
       imageSrc: img1,
-      techs: "React Js, Redux, Material UI",
-      github: "#",
+      techs: "C#, Unity, Rhino",
+      github: "https://github.com/kwlaial/VR-Laser-Cutter-Traning",
     },
     {
       id: 2,
-      name: "Full Stack Social Media App ",
+      name: "VR Hand-tracking Sculpture Development with Unreal Engine",
       imageSrc: img2,
-      techs: "React Js, Sanity, Tailwind CSS",
-      github: "#",
+      techs: "Blender, Unreal Engine 4&5",
+      github: "https://github.com/kwlaial/ArtStudIO",
     },
     {
       id: 3,
-      name: "Travel Advisor",
+      name: "ISDN1006 Human-centered Innovation",
       imageSrc: img3,
-      techs: "React Js, Chakra UI, Google API",
-      github: "#",
+      techs: "Adobe InDesign, Keyshot, Rhino",
+      github: "https://github.com/kwlaial/ISDN1006-HUMAN-CENTERED-INNOVATION",
     },
     {
       id: 4,
-      name: "Pintrest UI Clone 2.0 ",
+      name: "ISDN2400 Physical Prototyping",
       imageSrc: img4,
-      techs: "React Js,  Material UI",
-      github: "#",
+      techs: "Solidworks, Rhino",
+      github: "https://github.com/kwlaial/ISDN2400-PHYSICAL-PROTOTYPING/tree/main",
     },
     {
       id: 5,
-      name: "Own Video Blog",
+      name: "Maze Solver PCB design",
       imageSrc: img5,
-      techs: "React Js, Chara UI, Firebase",
-      github: "#",
+      techs: "KiCAD",
+      github: "",
     },
     {
       id: 6,
-      name: "Whatsapp UI Clone",
+      name: "Year 2 Project",
+      imageSrc: img6,
+      techs: "NextJs, Firebase Auth",
+      github: "#",
+    },
+    {
+      id: 7,
+      name: "Year 3 Project",
       imageSrc: img6,
       techs: "NextJs, Firebase Auth",
       github: "#",
