@@ -5,14 +5,16 @@ import {
     IoLogoTwitter,
     IoLogoLinkedin,
     IoLogoWhatsapp,
+    IoLogoInstagram,
   } from "react-icons/io5";
   import img1 from "./Img/laser.jpg";
   import img2 from "./Img/Sculpt.HEIC";
   import img3 from "./Img/lamp.jpg";
   import img4 from "./Img/Trini.jpg";
-  import img5 from "./Img/umich.jpeg";
-  import img6 from "./Img/umich.jpeg";
-  
+  import img5 from "./Img/PCB.jpg";
+  import img6 from "./Img/IRIS.jpg";
+  import img7 from "./Img/MIDI.jpg";
+
 export const Experience = [
     {
       id: 1,
@@ -95,21 +97,21 @@ export const Experience = [
       name: "Maze Solver PCB design",
       imageSrc: img5,
       techs: "KiCAD",
-      github: "",
+      github: "https://github.com/kwlaial/MAZE-SOLVER-PCB-DESIGN",
     },
     {
       id: 6,
-      name: "Year 2 Project",
+      name: "Year 2 Project - Digital Emotional Pet",
       imageSrc: img6,
-      techs: "NextJs, Firebase Auth",
-      github: "#",
+      techs: "ESP32, C++, Keyshot, Rhino, Fusion360, KiCAD",
+      github: "https://hkustisd.wixsite.com/isdn2021-22/background",
     },
     {
       id: 7,
-      name: "Year 3 Project",
-      imageSrc: img6,
-      techs: "NextJs, Firebase Auth",
-      github: "#",
+      name: "Year 3 Project - VR MIDI Production",
+      imageSrc: img7,
+      techs: "Unreal Engine, Rhino",
+      github: "https://github.com/kwlaial/VR-MIDI-PRODUCTION-UE5",
     },
   ];
 
@@ -118,21 +120,21 @@ export const Experience = [
       id: 1,
       iconSrc: <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />,
       name: "GitHub",
-      link: "#",
+      link: "https://github.com/kwlaial",
     },
     {
       id: 2,
       iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
       name: "YouTube",
-      link: "#",
+      link: "https://www.youtube.com/channel/UCTBmrRTP9Bbzf7QjZ6nqQQg",
     },
     {
       id: 3,
       iconSrc: (
-        <IoLogoTwitter className="text-blue-500 text-3xl cursor-pointer" />
+        <IoLogoInstagram className="text-purple-500 text-3xl cursor-pointer" />
       ),
-      name: "Twitter",
-      link: "#",
+      name: "Instagram",
+      link: "https://www.instagram.com/lkellyw_/",
     },
     {
       id: 4,
@@ -140,15 +142,15 @@ export const Experience = [
         <IoLogoLinkedin className="text-blue-800 text-3xl cursor-pointer" />
       ),
       name: "LinkedIn",
-      link: "#",
+      link: "https://www.linkedin.com/in/kam-wai-lai-a97113210/",
     },
-    {
-      id: 5,
+    /*
+      id: 4,
       iconSrc: (
         <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
       ),
       name: "Whatsapp",
-      link: "#",
-    },
+      link: "https://api.whatsapp.com/send?phone=+85261962965&text&app_absent=0",
+    },*/
   ];
   

@@ -53,7 +53,7 @@ export default function App() {
             <a href="#contact" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer duration-100 
             ease-in-out">Contact</a>
 
-            <a href="#" className="ml-auto text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
+            <a href="https://resume.io/r/I5tqwBep3" className="ml-auto text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
             px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out">Download</a>
 
           </div>
@@ -85,7 +85,7 @@ export default function App() {
               <a href="#contact" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer duration-100 
               ease-in-out"onClick={() => setIsActive(false)}>Contact</a>
 
-              <a href="#" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
+              <a href="https://resume.io/r/I5tqwBep3" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
               px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out"onClick={() => setIsActive(false)}>Download CV</a>
             
             </motion.div>
@@ -122,8 +122,8 @@ export default function App() {
             Hardworking college student seeking employment. 
             Scholar of Chinachem PrimeMovership Award 2022.
             </p>
-
-            <motion.button 
+          <a href={"https://resume.io/r/I5tqwBep3"}>
+            <motion.div 
             whileTap={{scale: 0.8}}
             class="w-full md:w-auto relative mt-6 inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium
             text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600
@@ -132,7 +132,8 @@ export default function App() {
             <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Download CV
                 </span>
-              </motion.button>
+              </motion.div>
+          </a>
           </div>
         </section>
         
@@ -190,14 +191,15 @@ export default function App() {
           <div className='flex items-center justify-center w-full my-4 flex-wrap gap-4'>
             {
               SocialLinks && SocialLinks.map(n=>(
-
-            <motion.a whileTap={{scale: 0.8}}
+          <a href={n.link}>
+            <motion.div whileTap={{scale: 0.8}}
               key={n.id}
               href='#' className='w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:text-white duration-100 ease-in-out
               cursor-pointer flex items-center justify-center gap-3'>
               {n.iconSrc}
               <p className='text-lg text-textBase'>{n.name}</p>
-            </motion.a>
+            </motion.div>
+          </a>
               ))
             }
           </div>
