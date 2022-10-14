@@ -86,7 +86,7 @@ export default function App() {
               ease-in-out"onClick={() => setIsActive(false)}>Contact</a>
 
               <a href="#" className="text-base text-textBase font-medium hover:text-Hover cursor-pointer border border-textBase
-              px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out"onClick={() => setIsActive(false)}>Download</a>
+              px-2 py-1 rounded-xl hover:border-grey-100 duration-100 ease-in-out"onClick={() => setIsActive(false)}>Download CV</a>
             
             </motion.div>
           )}
@@ -119,7 +119,8 @@ export default function App() {
             <p className="text-lg text-textBase text-center">
             Passionate in designing devices and making prototypes to solve issues. 
             Eager to learn new skills and software. Interested in VR/AR and design fields. 
-            Hardworking college student seeking employment.
+            Hardworking college student seeking employment. 
+            Scholar of Chinachem PrimeMovership Award 2022.
             </p>
 
             <motion.button 
@@ -129,7 +130,7 @@ export default function App() {
             hover:text-white dark:text-white focus:ring-4 focus:ring-green-200 dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg
             hover:dark:shadow-teal-800/80">
             <span class="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-              Download
+              Download CV
                 </span>
               </motion.button>
           </div>

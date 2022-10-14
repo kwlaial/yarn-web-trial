@@ -6,7 +6,7 @@ import {
     IoLogoLinkedin,
     IoLogoWhatsapp,
   } from "react-icons/io5";
-  import img1 from "./Img/umich.jpeg";
+  import img1 from "./Img/laser.jpg";
   import img2 from "./Img/umichenv.jpeg";
   import img3 from "./Img/umichlib.jpeg";
   import img4 from "./Img/umichtree.jpeg";
@@ -16,48 +16,48 @@ import {
 export const Experience = [
     {
       id: 1,
-      date: "2016 - present",
+      date: "Sep 2020 - present",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Bachelor at The Hong Kong University of Science and Technology",
+      location: "Hong Kong",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "School of Engineering: BSc Integrative System and Design (ISD), Year 3 ( CGA: 3.202 )",
     },
     {
       id: 2,
-      date: "2014 - 2016",
+      date: "Jun 2021 - Aug 2021",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Undergraduate Research Intern - Unity Game Developer",
+      location: "Hong Kong",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Build 3D laser cutter environment in Unity game engine for new students laser cutter training.",
     },
     {
       id: 3,
-      date: "2012 - 2014",
+      date: "Jan 2022 - May 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Computer Vision and Computational Design Research",
+      location: "Hong Kong",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Semi-automatic segmentation tool development, Learn the segmentation data labeling interactive tool and help with data labeling, Get familiar with the latest deep learning-based segmentation model and image processing, Help online tool development with web-based design, back-end design, API programming, etc.",
     },
     {
       id: 4,
-      date: "2011 - 2012",
+      date: "Jun 2022 - Aug 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "VR Hand-tracking Sculpture Development with Unreal Engine",
+      location: "Hong Kong",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Create an art studio in VR environment for sculpture purposes, Make use of the hand-tracking function in VR headset for gesture recognition to enable actions (e.g. scale-up, zoom in, pull etc)",
     },
     {
       id: 5,
-      date: "2010 - 2011",
+      date: "Sep 2022 - present",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Bachelor at University of Michigan - Ann Arbor",
+      location: "Michigan, USA",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Major in Electrical Engineering",
     },
   ];
   
